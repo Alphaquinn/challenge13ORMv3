@@ -10,7 +10,7 @@ Category.init(
     id:{
       type:DataTypes.INTEGER,
       allownull:false,
-      primarykey: true,
+      primaryKey: true,
       autoIncrement: true,
     },
      category_name:{
@@ -24,7 +24,7 @@ Category.init(
     freezeTableName: true,
     underscored: true,
     modelName: 'category',
-  },
+  }
 );
 
 module.exports = Category;
