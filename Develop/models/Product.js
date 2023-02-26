@@ -11,10 +11,10 @@ Product.init(
   {
     // define columns
     id:{
-      type:DataTypes.INTEGER,
-      allowNull:false,
-      primaryKey:true,
-      autoIncrement: true,
+    type:dataTypes.INTEGER,
+    allowNull:false,
+    primaryKey:true,
+    autoIncrement: true,
     },
     price:{
       type: DataTypes.DECIMAL(10,2),
@@ -25,22 +25,22 @@ Product.init(
 
     },
     stock: {
-      type:dataTypes.INTEGER,
-      allowNull:false,
-      defaultValue: 10,
-      validate:{
-        isNumeric:true
+    type:DataTypes.INTEGER,
+    allowNull:false,
+    defaultValue:10,
+    validate:{
+        isNumeric:true,
       }
     },
-    product_Name:{
-      type:dataTypes.INTEGER,
-      allowNull:false,
+    product_name:{
+      type: DataTypes.INTEGER,
+    allowNull:false,
     },
 
   category_id:{
     type:dataTypes.INTEGER,
     references:{
-      modal: "category",
+      model: "category",
       key: "id",
     }
 
